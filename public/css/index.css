@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Limelight&display=swap");
+body,
+html {
+  height: 100%;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+
+p {
+  font-family: "Limelight", cursive;
+}
+
+h1 {
+  font-family: "Noto Sans TC", sans-serif;
+  text-shadow: 2px 2px rgba(27, 27, 27, 0.37);
+}
+
+._Title {
+  border: 2px solid #c0c0c0;
+  height: auto;
+  width: 30%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 2px rgba(27, 27, 27, 0.37);
+  cursor: pointer;
+}
+
+.arrowBounce {
+  position: relative;
+  animation: bounce 2s infinite;
+}
+
+.click_img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+.arrowBounce svg {
+ 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: hsl(243, 80%, 62%);
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(-3px);
+  }
+}
+
+.menu_container {
+  background-color: rgba(27, 27, 27, 0.37);
+  height: auto;
+  width: 30%;
+  padding: 10px;
+  border: 0.5px solid white;
+  margin: 5px;
+  box-shadow: 2px 2px rgba(27, 27, 27, 0.37);
+  cursor: pointer;
+}
+
+.container {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+
+.textAnimation
+{
+  position: relative;
+  color:rgba(27, 27, 27, 0.37);
+  animation: colorChange 3s infinite;
+}
+
+@keyframes colorChange {
+  0%,
+  20%{
+    color:rgb(0, 179, 255);
+
+  }
+  50%
+  {
+    color:rgb(64, 0, 255);
+
+  }
+  80%{
+    color:rgba(0, 255, 38, 0.611);
+
+  }
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(-3px);
+  }
+}
+
+._text
+{
+  position: relative;
+  font-family: "Noto Sans TC", sans-serif;
+  left:25%;
+  color:rgba(27, 27, 27, 0.37);
+  text-shadow: 2px 2px rgba(27, 27, 27, 0.37);
+  text-align: left;
+}
+.Movingtext
+{
+  position: relative;
+  animation: moving 3s ease-in;
+  font-family: "Noto Sans TC", sans-serif;
+  left:25%;
+  color:rgba(27, 27, 27, 0.37);
+  text-shadow: 2px 2px rgba(27, 27, 27, 0.37);
+  text-align: left;
+  
+}
+
+@keyframes moving {
+  0%
+  {
+    
+    left:0%;
+  }
+  /* 20%
+  {
+    left:7.5%;
+  }
+  50%
+  {
+
+    left:12.5%;
+  }
+  75%
+  {
+    left:18.5%;
+  } */
+  100% {
+    left:25%;
+
+  }
+}
+

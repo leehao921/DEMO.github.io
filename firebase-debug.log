@@ -1,0 +1,159 @@
+[debug] [2022-05-21T09:24:57.101Z] ----------------------------------------------------------------------
+[debug] [2022-05-21T09:24:57.103Z] Command:       /usr/local/Cellar/node/18.0.0/bin/node /usr/local/bin/firebase deploy
+[debug] [2022-05-21T09:24:57.103Z] CLI Version:   10.9.2
+[debug] [2022-05-21T09:24:57.103Z] Platform:      darwin
+[debug] [2022-05-21T09:24:57.103Z] Node Version:  v18.0.0
+[debug] [2022-05-21T09:24:57.105Z] Time:          Sat May 21 2022 17:24:57 GMT+0800 (Taipei Standard Time)
+[debug] [2022-05-21T09:24:57.106Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-21T09:24:57.163Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-21T09:24:57.163Z] > authorizing via signed-in user (leehao921@gapp.nthu.edu.tw)
+[debug] [2022-05-21T09:24:57.164Z] [iam] checking project colormentilist2022 for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2022-05-21T09:24:57.165Z] > refreshing access token with scopes: []
+[debug] [2022-05-21T09:24:57.165Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-05-21T09:24:57.403Z] <<< HTTP RESPONSE 200 {"date":"Sat, 21 May 2022 09:24:57 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-21T09:24:57.436Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/colormentilist2022:testIamPermissions [none]
+[debug] [2022-05-21T09:24:57.436Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/colormentilist2022:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2022-05-21T09:24:58.371Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/colormentilist2022:testIamPermissions 200
+[debug] [2022-05-21T09:24:58.371Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/colormentilist2022:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2022-05-21T09:24:58.372Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/colormentilist2022 [none]
+[debug] [2022-05-21T09:24:58.761Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/colormentilist2022 200
+[debug] [2022-05-21T09:24:58.761Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/colormentilist2022 {"projectId":"colormentilist2022","projectNumber":"245821710009","displayName":"Colormentilist2022","name":"projects/colormentilist2022","resources":{"hostingSite":"colormentilist2022","realtimeDatabaseInstance":"colormentilist2022-default-rtdb","storageBucket":"colormentilist2022.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[debug] [2022-05-21T09:24:58.762Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/colormentilist2022 [none]
+[debug] [2022-05-21T09:24:59.138Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/colormentilist2022 200
+[debug] [2022-05-21T09:24:59.138Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/colormentilist2022 {"projectId":"colormentilist2022","projectNumber":"245821710009","displayName":"Colormentilist2022","name":"projects/colormentilist2022","resources":{"hostingSite":"colormentilist2022","realtimeDatabaseInstance":"colormentilist2022-default-rtdb","storageBucket":"colormentilist2022.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'colormentilist2022'...
+[info] 
+[info] i  deploying database, storage, firestore, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2022-05-21T09:24:59.141Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-05-21T09:24:59.141Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-05-21T09:24:59.313Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Sat, 21 May 2022 09:24:59 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-21T09:24:59.338Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/colormentilist2022/locations/-/instances/colormentilist2022-default-rtdb  
+ 
+[debug] [2022-05-21T09:24:59.708Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 21 May 2022 09:24:59 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-21T09:24:59.710Z] >>> HTTP REQUEST PUT https://colormentilist2022-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json?dryRun=true  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": true,
+    ".write": true
+  }
+}
+
+[debug] [2022-05-21T09:25:00.070Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Sat, 21 May 2022 09:25:00 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[info] ✔  database: rules syntax for database colormentilist2022-default-rtdb is valid 
+[debug] [2022-05-21T09:25:00.071Z] > refreshing access token with scopes: []
+[debug] [2022-05-21T09:25:00.071Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-05-21T09:25:00.250Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sat, 21 May 2022 09:25:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-21T09:25:00.275Z] >>> [apiv2][query] GET https://appengine.googleapis.com/v1/apps/colormentilist2022 [none]
+[debug] [2022-05-21T09:25:00.732Z] <<< [apiv2][status] GET https://appengine.googleapis.com/v1/apps/colormentilist2022 200
+[debug] [2022-05-21T09:25:00.732Z] <<< [apiv2][body] GET https://appengine.googleapis.com/v1/apps/colormentilist2022 {"name":"apps/colormentilist2022","id":"colormentilist2022","authDomain":"gmail.com","locationId":"us-central","codeBucket":"staging.colormentilist2022.appspot.com","servingStatus":"SERVING","defaultHostname":"colormentilist2022.uc.r.appspot.com","defaultBucket":"colormentilist2022.appspot.com","serviceAccount":"colormentilist2022@appspot.gserviceaccount.com","gcrDomain":"us.gcr.io","databaseType":"CLOUD_FIRESTORE","featureSettings":{"splitHealthChecks":true,"useContainerOptimizedOs":true}}
+[info] i  firebase.storage: checking storage.rules for compilation errors... 
+[debug] [2022-05-21T09:25:00.733Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/colormentilist2022:test [none]
+[debug] [2022-05-21T09:25:00.733Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/colormentilist2022:test [omitted]
+[debug] [2022-05-21T09:25:01.866Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/colormentilist2022:test 200
+[debug] [2022-05-21T09:25:01.867Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/colormentilist2022:test {}
+[info] ✔  firebase.storage: rules file storage.rules compiled successfully 
+[info] i  firestore: reading indexes from firestore.indexes.json... 
+[info] i  cloud.firestore: checking firestore.rules for compilation errors... 
+[debug] [2022-05-21T09:25:01.869Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/colormentilist2022:test [none]
+[debug] [2022-05-21T09:25:01.869Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/colormentilist2022:test [omitted]
+[debug] [2022-05-21T09:25:03.098Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/colormentilist2022:test 200
+[debug] [2022-05-21T09:25:03.098Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/colormentilist2022:test {}
+[info] ✔  cloud.firestore: rules file firestore.rules compiled successfully 
+[debug] [2022-05-21T09:25:03.099Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/colormentilist2022 [none]
+[debug] [2022-05-21T09:25:03.483Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/colormentilist2022 200
+[debug] [2022-05-21T09:25:03.483Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/colormentilist2022 {"projectId":"colormentilist2022","projectNumber":"245821710009","displayName":"Colormentilist2022","name":"projects/colormentilist2022","resources":{"hostingSite":"colormentilist2022","realtimeDatabaseInstance":"colormentilist2022-default-rtdb","storageBucket":"colormentilist2022.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[debug] [2022-05-21T09:25:03.485Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/245821710009/sites/colormentilist2022/versions [none]
+[debug] [2022-05-21T09:25:03.485Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/245821710009/sites/colormentilist2022/versions {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-05-21T09:25:04.942Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/245821710009/sites/colormentilist2022/versions 200
+[debug] [2022-05-21T09:25:04.942Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/245821710009/sites/colormentilist2022/versions {"name":"projects/245821710009/sites/colormentilist2022/versions/3757a972e7b2d2b3","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-05-21T09:25:04.943Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/colormentilist2022/releases pageSize=10&pageToken=
+[debug] [2022-05-21T09:25:05.488Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/colormentilist2022/releases 200
+[debug] [2022-05-21T09:25:05.488Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/colormentilist2022/releases {"releases":[{"name":"projects/colormentilist2022/releases/cloud.firestore","rulesetName":"projects/colormentilist2022/rulesets/e2592b3f-6411-4d29-8c6a-77df9b0b14f8","createTime":"2022-05-21T08:10:31.385913Z","updateTime":"2022-05-21T09:20:54.180912Z"},{"name":"projects/colormentilist2022/releases/firebase.storage/colormentilist2022.appspot.com","rulesetName":"projects/colormentilist2022/rulesets/8e24ed53-f32a-488d-ab28-34b783eb12cd","createTime":"2022-05-21T09:02:28.833974Z","updateTime":"2022-05-21T09:20:53.800288Z"}]}
+[debug] [2022-05-21T09:25:05.489Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/colormentilist2022/rulesets/8e24ed53-f32a-488d-ab28-34b783eb12cd [none]
+[debug] [2022-05-21T09:25:06.666Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/colormentilist2022/rulesets/8e24ed53-f32a-488d-ab28-34b783eb12cd 200
+[debug] [2022-05-21T09:25:06.666Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/colormentilist2022/rulesets/8e24ed53-f32a-488d-ab28-34b783eb12cd [omitted]
+[info] i  storage: latest version of storage.rules already up to date, skipping upload... 
+[debug] [2022-05-21T09:25:06.669Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-05-21T09:25:06.669Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-05-21T09:25:06.670Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/colormentilist2022/releases pageSize=10&pageToken=
+[debug] [2022-05-21T09:25:06.859Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Sat, 21 May 2022 09:25:07 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-21T09:25:06.886Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/colormentilist2022/databases/(default)/collectionGroups/-/indexes  
+ 
+[debug] [2022-05-21T09:25:07.809Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/colormentilist2022/releases 200
+[debug] [2022-05-21T09:25:07.809Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/colormentilist2022/releases {"releases":[{"name":"projects/colormentilist2022/releases/cloud.firestore","rulesetName":"projects/colormentilist2022/rulesets/e2592b3f-6411-4d29-8c6a-77df9b0b14f8","createTime":"2022-05-21T08:10:31.385913Z","updateTime":"2022-05-21T09:20:54.180912Z"},{"name":"projects/colormentilist2022/releases/firebase.storage/colormentilist2022.appspot.com","rulesetName":"projects/colormentilist2022/rulesets/8e24ed53-f32a-488d-ab28-34b783eb12cd","createTime":"2022-05-21T09:02:28.833974Z","updateTime":"2022-05-21T09:20:53.800288Z"}]}
+[debug] [2022-05-21T09:25:07.809Z] > refreshing access token with scopes: []
+[debug] [2022-05-21T09:25:07.809Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-05-21T09:25:07.973Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 21 May 2022 09:25:08 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-21T09:25:08.000Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/colormentilist2022/rulesets/e2592b3f-6411-4d29-8c6a-77df9b0b14f8 [none]
+[debug] [2022-05-21T09:25:08.291Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 21 May 2022 09:25:08 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-21T09:25:08.292Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-05-21T09:25:08.292Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-05-21T09:25:08.486Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sat, 21 May 2022 09:25:08 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-21T09:25:08.510Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/colormentilist2022/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false  
+ 
+[debug] [2022-05-21T09:25:09.231Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/colormentilist2022/rulesets/e2592b3f-6411-4d29-8c6a-77df9b0b14f8 200
+[debug] [2022-05-21T09:25:09.231Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/colormentilist2022/rulesets/e2592b3f-6411-4d29-8c6a-77df9b0b14f8 [omitted]
+[info] i  firestore: latest version of firestore.rules already up to date, skipping upload... 
+[debug] [2022-05-21T09:25:09.822Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 21 May 2022 09:25:09 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] ✔  firestore: deployed indexes in firestore.indexes.json successfully 
+[info] i  hosting[colormentilist2022]: beginning deploy... 
+[info] i  hosting[colormentilist2022]: found 21 files in public 
+[debug] [2022-05-21T09:25:09.839Z] [hosting] uploading with 200 concurrency
+[debug] [2022-05-21T09:25:09.851Z] > refreshing access token with scopes: []
+[debug] [2022-05-21T09:25:09.852Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-05-21T09:25:09.855Z] [hosting] hash cache [cHVibGlj] stored for 21 files
+[debug] [2022-05-21T09:25:09.855Z] [hosting][hash queue][FINAL] {"max":7,"min":1,"avg":1.2857142857142858,"active":0,"complete":21,"success":21,"errored":0,"retried":0,"total":21,"elapsed":13}
+[debug] [2022-05-21T09:25:10.023Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 21 May 2022 09:25:10 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-21T09:25:10.050Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/245821710009/sites/colormentilist2022/versions/3757a972e7b2d2b3:populateFiles [none]
+[debug] [2022-05-21T09:25:10.051Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/245821710009/sites/colormentilist2022/versions/3757a972e7b2d2b3:populateFiles {"files":{"/404.html":"05cbc6f94d7a69ce2e29646eab13be2c884e61ba93e3094df5028866876d18b3","/index.html":"224f7fd5c27c9dddec5fb3970fda2fc1402ab7d66f20d4b836cfb0193458af70","/css/index.css":"ecf9ba9a3828554dd7ada133061599428c29ccfcd136a448486f160c749fab91","/css/menu.css":"e81b3331322e060ffe95175b1f7e1ef57f78e2759cbe580ecfaa3720a927a826","/css/favcon/about.txt":"cd193fd9b4455b43be7fe4a2ff5b3f7d602294ca48030b4660638e464e290bf2","/css/favcon/apple-touch-icon.png":"9774ab14ed1ae9d9f60874e09b25e2c4fd4a07ff1401b196f3da6a358ae4c3a2","/css/favcon/favicon-16x16.png":"e806d24bacc292d33d7ad112715b0289831399b4d3ca255183b3ece9b54578c0","/css/favcon/favicon-32x32.png":"557ad352bff98386ddec2dcfa6d77da0c0cbaa71ac30dc59cbd426fc04a84f60","/css/favcon/favicon.ico":"ff6f60652a3a97dccbd4947c49e122bcd0ca0cad508e5c24b7757a6c542d1742","/css/favcon/site.webmanifest":"438eab4e1bab8df855faa047301dcd8cce4c8a815a1527502b0efc2270ad77fd","/js/firebase.js":"f93c1ce14fa8412d821642945f9d02c2f13f13aea043681245ee929c6667687e","/js/index.js":"c11e5198ca9b36beef326ea01cb6acda53c91b6091939493d9d55ff5100bb629","/js/menu.js":"8c73d169e4aa84397c78c3599db428ef64f1b7af7edd1ba93aee27821f391b2e","/src/Data.txt":"e77d7deb26faf152fc1f24baeb15af9428b18087362bff20c0e60aa701cba97a","/src/Factory_A.JPG":"a1629d0cf5082ae0c9b279dfc8d59cc3eeec9cee97806229f62178a1c4bf48ff","/src/Factory_B.JPG":"c1230e301431d18a1044626fd666a16165775779c7a2db2717dcd10491722dae","/src/Factory_C.JPG":"a0229fd418633c523f572ec02eed1b126bf650e5fec14f320e787c448f1b8f58","/src/Factory_D.JPG":"823e9780b7cc6f93d20ccb8d920f80b403e86b5e8db917070e87cb20ffde9d6b","/src/data.json":"f9c2de0255792deb2361b0680bb3a76ce6e49e23d78a67ec088f9b06df0bc50b","/src/real.json":"b95dd303fa0a6a6d131fb89d03eedb1277b95f1227510e6ce4e2363813c01b0d","/menu.html":"83aa8890cd6c547a6c50a3f4506159de60dcb7fd842bb152579a3184265e7146"}}
+[debug] [2022-05-21T09:25:11.321Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/245821710009/sites/colormentilist2022/versions/3757a972e7b2d2b3:populateFiles 200
+[debug] [2022-05-21T09:25:11.321Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/245821710009/sites/colormentilist2022/versions/3757a972e7b2d2b3:populateFiles {"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/colormentilist2022/versions/3757a972e7b2d2b3/files"}
+[debug] [2022-05-21T09:25:11.321Z] [hosting][populate queue][FINAL] {"max":1470,"min":1470,"avg":1470,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1470}
+[debug] [2022-05-21T09:25:11.321Z] [hosting] uploads queued: 0
+[debug] [2022-05-21T09:25:11.322Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1653125111322}
+[info] ✔  hosting[colormentilist2022]: file upload complete 
+[debug] [2022-05-21T09:25:11.323Z] [hosting] deploy completed after 1500ms
+[info] i  database: releasing rules... 
+[debug] [2022-05-21T09:25:11.331Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-05-21T09:25:11.331Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-05-21T09:25:11.513Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sat, 21 May 2022 09:25:11 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-21T09:25:11.540Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/colormentilist2022/locations/-/instances/colormentilist2022-default-rtdb  
+ 
+[debug] [2022-05-21T09:25:11.943Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 21 May 2022 09:25:12 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-21T09:25:11.944Z] >>> HTTP REQUEST PUT https://colormentilist2022-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": true,
+    ".write": true
+  }
+}
+
+[debug] [2022-05-21T09:25:12.484Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Sat, 21 May 2022 09:25:12 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[info] ✔  database: rules for database colormentilist2022-default-rtdb released successfully 
+[debug] [2022-05-21T09:25:12.486Z] [rules] releasing firebase.storage/colormentilist2022.appspot.com with ruleset projects/colormentilist2022/rulesets/8e24ed53-f32a-488d-ab28-34b783eb12cd
+[debug] [2022-05-21T09:25:12.486Z] > refreshing access token with scopes: []
+[debug] [2022-05-21T09:25:12.487Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-05-21T09:25:12.666Z] <<< HTTP RESPONSE 200 {"date":"Sat, 21 May 2022 09:25:12 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-21T09:25:12.697Z] >>> [apiv2][query] PATCH https://firebaserules.googleapis.com/v1/projects/colormentilist2022/releases/firebase.storage/colormentilist2022.appspot.com [none]
+[debug] [2022-05-21T09:25:12.697Z] >>> [apiv2][body] PATCH https://firebaserules.googleapis.com/v1/projects/colormentilist2022/releases/firebase.storage/colormentilist2022.appspot.com {"release":{"name":"projects/colormentilist2022/releases/firebase.storage/colormentilist2022.appspot.com","rulesetName":"projects/colormentilist2022/rulesets/8e24ed53-f32a-488d-ab28-34b783eb12cd"}}
+[debug] [2022-05-21T09:25:13.925Z] <<< [apiv2][status] PATCH https://firebaserules.googleapis.com/v1/projects/colormentilist2022/releases/firebase.storage/colormentilist2022.appspot.com 200
+[debug] [2022-05-21T09:25:13.926Z] <<< [apiv2][body] PATCH https://firebaserules.googleapis.com/v1/projects/colormentilist2022/releases/firebase.storage/colormentilist2022.appspot.com {"name":"projects/colormentilist2022/releases/firebase.storage/colormentilist2022.appspot.com","rulesetName":"projects/colormentilist2022/rulesets/8e24ed53-f32a-488d-ab28-34b783eb12cd","createTime":"2022-05-21T09:02:28.833974Z","updateTime":"2022-05-21T09:25:13.981019Z"}
+[debug] [2022-05-21T09:25:13.926Z] [rules] updated release projects/colormentilist2022/releases/firebase.storage/colormentilist2022.appspot.com
+[info] ✔  storage: released rules storage.rules to firebase.storage 
+[debug] [2022-05-21T09:25:13.926Z] [rules] releasing cloud.firestore with ruleset projects/colormentilist2022/rulesets/e2592b3f-6411-4d29-8c6a-77df9b0b14f8
+[debug] [2022-05-21T09:25:13.927Z] >>> [apiv2][query] PATCH https://firebaserules.googleapis.com/v1/projects/colormentilist2022/releases/cloud.firestore [none]
+[debug] [2022-05-21T09:25:13.927Z] >>> [apiv2][body] PATCH https://firebaserules.googleapis.com/v1/projects/colormentilist2022/releases/cloud.firestore {"release":{"name":"projects/colormentilist2022/releases/cloud.firestore","rulesetName":"projects/colormentilist2022/rulesets/e2592b3f-6411-4d29-8c6a-77df9b0b14f8"}}

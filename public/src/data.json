@@ -1,0 +1,11 @@
+"Drink":[
+    {"id":0,"Factory_A":"Factory_A","teaType": "Black Tea","details":"AAA Black"}, 
+    {"id":1,"Factory_A":"Factory_B","teaType": "Green Tea","details":"BBB Green"},
+    {"id":2,"Factory_A":"Factory_C","teaType": "Oolong","details":"CCC Oolong"},
+    {"id":3,"Factory_A":"Factory_C","teaType": "Black Tea","details":"CCC Black"},
+    {"id":4,"Factory_A":"Factory_A","teaType": "Green Tea","details":"AAA Green"},
+    {"id":5,"Factory_A":"Factory_D","teaType": "Green Tea","details":"DDD Green"},
+    {"id":6,"Factory_A":"Factory_B","teaType": "Oolong","details":"BBB Oolong"},
+    {"id":7,"Factory_A":"Factory_C","teaType": "Black Tea","details":"CCC Green"}
+
+]
